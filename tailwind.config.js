@@ -1,0 +1,60 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        pine: {
+          50: '#f0f5f2',
+          100: '#dbe8e0',
+          200: '#b8d1c2',
+          300: '#8db29e',
+          400: '#5f8f79',
+          500: '#3f715c',
+          600: '#2d5a48',
+          700: '#24473a',
+          800: '#1b3b2f',
+          900: '#132a22',
+          950: '#0b1a15',
+        },
+        brass: {
+          50: '#faf6ee',
+          100: '#f2e8d3',
+          200: '#e4cea3',
+          300: '#d4ae6e',
+          400: '#c69648',
+          500: '#b08d57',
+          600: '#96703a',
+          700: '#785830',
+          800: '#63472b',
+          900: '#533b27',
+        },
+        ink: {
+          50: '#f6f6f5',
+          100: '#e7e6e4',
+          200: '#d0cdc9',
+          300: '#aeaaa3',
+          400: '#87817a',
+          500: '#6c665f',
+          600: '#5a544e',
+          700: '#4a4540',
+          800: '#332f2b',
+          900: '#221f1c',
+          950: '#161311',
+        },
+        cream: '#f7f5f0',
+      },
+      fontFamily: {
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Fraunces"', 'ui-serif', 'Georgia', 'serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+      },
+      boxShadow: {
+        card: '0 1px 2px rgba(22, 19, 17, 0.06), 0 1px 3px rgba(22, 19, 17, 0.08)',
+        panel: '0 2px 8px rgba(22, 19, 17, 0.08), 0 1px 2px rgba(22, 19, 17, 0.06)',
+        modal: '0 20px 60px rgba(11, 26, 21, 0.35)',
+      },
+    },
+  },
+  plugins: [],
+}
