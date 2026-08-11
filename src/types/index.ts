@@ -226,3 +226,34 @@ export interface MemberAccountTransaction {
   orderNumber?: string
   createdAt: string
 }
+
+// New types for Tee Sheet booking module
+export type TeeTimeStatus = 'Available' | 'Booked' | 'Blocked'
+
+interface TeeSlot {
+  id: string;
+  date: string;
+  time: string;
+  holes: 9 | 18;
+  maxPlayers: number;
+  status: TeeTimeStatus;
+}
+
+interface TeeBookingPlayer {
+  name: string;
+  customerId?: string;
+  isMember: boolean;
+}
+
+interface TeeBooking {
+  id: string;
+  slotId: string;
+  date: string;
+  time: string;
+  players: TeeBookingPlayer[];
+  buggy: boolean;
+  notes?: string;
+  createdAt: string;
+  createdByStaffId: string;
+  status: 'Confirmed' | 'Cancelled';
+}
