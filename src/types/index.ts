@@ -230,7 +230,7 @@ export interface MemberAccountTransaction {
 // New types for Tee Sheet booking module
 export type TeeTimeStatus = 'Available' | 'Booked' | 'Blocked'
 
-interface TeeSlot {
+export interface TeeSlot {
   id: string;
   date: string;
   time: string;
@@ -239,13 +239,13 @@ interface TeeSlot {
   status: TeeTimeStatus;
 }
 
-interface TeeBookingPlayer {
+export interface TeeBookingPlayer {
   name: string;
   customerId?: string;
   isMember: boolean;
 }
 
-interface TeeBooking {
+export interface TeeBooking {
   id: string;
   slotId: string;
   date: string;
