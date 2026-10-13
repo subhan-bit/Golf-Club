@@ -1,8 +1,8 @@
-# Royal Green Golf Club — POS Prototype
+# Golf Club POS Prototype (Practice Project)
 
-An interactive, high-fidelity prototype of the point-of-sale component of a
-bespoke golf-club management platform, built to demo to club management
-ahead of migrating off Intelligent Golf.
+A self-directed practice project: an interactive, high-fidelity prototype of
+the point-of-sale part of a golf-club management system. "Royal Green Golf
+Club" is a made-up club used for the demo data.
 
 This is a **prototype**, but the codebase is architected so the mock service
 layer can be swapped for real HTTP calls to a FastAPI/PostgreSQL backend
@@ -191,8 +191,8 @@ functional in demo mode out of the box (`VITE_DEMO_MODE=true` in
   scaffolded in the service layer but not yet exposed as forms in the UI —
   only viewing is wired up for those two areas.
 - Not tested on touch hardware; the layout is desktop-first with tablet-
-  friendly spacing per the brief, but a physical trial on the intended
-  hardware is recommended before go-live.
+  friendly spacing, and testing on a real touch screen would be the next
+  step.
 - Bundle isn't code-split yet (single ~200KB gzipped JS bundle) — fine for a
   demo, but worth addressing with route-based `lazy()` imports before
   production.
